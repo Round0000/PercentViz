@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Atkinson Hyperlegible", Tahoma, sans-serif;
+}
+
+input,
+button {
+  font-family: inherit;
+}
+
+/*****************/
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.7s;
+}
+
+#form {
+  padding: 2em;
+  width: max-content;
+  margin: auto;
+}
+
+#inputs {
+  padding: 1em;
+  display: flex;
+  gap: 0.5em;
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1em;
+  padding: 0.5em .75em;
+  box-shadow: 1px 2px 5px #2222;
+}
+
+.inputBox label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: .8rem;
+}
+
+#camembert {
+  width: 250px;
+  height: 250px;
+  margin: 1em auto;
+  border: 4px solid #222;
+  border-radius: 100%;
+}
+
+#legende {
+  max-width: max-content;
+  margin: 1em auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#actions {
+  display: flex;
+  gap: 1em;
+  justify-content: space-between;
+  max-width: 80vw;
+  margin: auto;
+}
+
+#total {
+  width: 100%;
+  text-align: center;
+}
+
+#total span {
+  font-weight: bold;
+}
+
+#legende .item {
+  padding: 0.25em 0.5em;
+  border: 1px solid #ccc;
+  margin: 0.5em;
+  padding-right: 1em;
+}
+
+#legende .chiffre span {
+  font-weight: bold;
+}
+
+button {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  cursor: pointer;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  height: 36px;
+  line-height: 27px;
+  min-width: 54px;
+  padding: 0 16px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: pre;
+}
+
+button:hover {
+  border-color: #dadce0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px;
+  color: #202124;
+}
+
+button:focus {
+  border-color: #4285f4;
+  outline: none;
+}
+
+button.removeInput {
+  color: tomato;
+}
+
+input {
+    font-size: 1rem;
+    padding: .25em .5em;
+    border: none;
+    border-bottom: 1px solid #2225;
+    background-color: #eee5;
+}
+
+input[type="number"] {
+    max-width: 7em;
+}
